@@ -18,7 +18,7 @@ printf("Hello World") --> std::cout << "Hello World";
 */
 
 
-#include <stdio.h>
+/* #include <stdio.h>
 int main() 
 {
     float cm, inches;
@@ -28,3 +28,21 @@ int main()
     printf("Length in inches is %f \n", inches);
     return 0;
 }  
+*/
+
+#include <iostream> //add header file 
+using namespace std; // add namespace std for omit having std::
+
+int main() // main finction begin
+{
+  float cm, inches; //creat float veriable
+  
+  cout<< "Enter a length in cm : "; //dispaly message
+  cin>> cm; // read float value
+
+  inches = cm / 2.54; //calculate inches
+
+  cout<< "Leangth in inches is "<< inches; //display answer of inches
+
+  return 0; 
+} // end main function
